@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: hsl(0, 0%, 95%);
+    }
+    .container {
+      background-color: black;
+      height: 600px;
+      width: 1100px;
+      margin: 5%;
+      margin-left: 21%;
+      margin-top: 180px;
+      border-radius: 10px;
+    }
+    .sedan {
+      background-color: hsl(31, 77%, 52%);
+      height: 600px;
+      width: 366.6px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .suvs {
+      height: 600px;
+      width: 366.6px;
+      margin-left: 366.6px;
+      margin-top: -600px;
+      background-color: hsl(184, 100%, 22%);
+    }
+    .luxury {
+      height: 600px;
+      width: 366.6px;
+      background-color: hsl(179, 100%, 13%);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-left: 366.6px;
+      position: absolute;
+    }
+    h1 {
+      position: absolute;
+      margin: 2.5%;
+      margin-top: 7%;
+      margin-left: 3%;
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-size: 45px;
+      color: hsl(0, 0%, 95%);
+    }
+    img {
+      position: absolute;
+    }
+    .sedanp {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+      line-height: 180%;
+      text-align:start;    
+      position: absolute;
+      margin-left: 60px;
+      margin-top: 220px;
+      margin-right: 64.5%;
+    }
+    .suvp {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+      line-height: 180%;
+      text-align:start;    
+      position: absolute;
+      margin-left: 60px;
+      margin-top: 220px;
+      margin-right: 45%;
+      
+    }
+    .luxuryh1 {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-size: 45px;
+      color: hsl(0, 0%, 95%);
+      position: absolute;
+      margin-left: 13%;
+      margin-top: 35%;
+    }
+    .luxuryp {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+      line-height: 180%;
+      text-align:start;    
+      position: absolute;
+      margin-left: 48px;
+      margin-top: 220px;
+      margin-right: 23%;
+    }
+    .sedanB {
+	   background-color:white;
+	   border-radius:28px;
+	   display:inline-block;
+   	 cursor:pointer;
+   	 font-family: 'Lexend Deca', sans-serif;;
+   	 font-size:17px;
+   	 padding:16px 42px;
+   	 text-decoration:none;
+     margin-left: 13%;
+     margin-top: 130%;
+     color: hsl(31, 77%, 52%);
+    }
+    .sedanB:hover {
+	   background-color:rgb(219, 219, 219);
+    }
+    
+    .suvB {
+	   background-color:white;
+	   border-radius:28px;
+	   display:inline-block;
+   	 cursor:pointer;
+   	 font-family: 'Lexend Deca', sans-serif;;
+   	 font-size:17px;
+   	 padding:16px 42px;
+   	 text-decoration:none;
+     margin-left: 2.5%;
+     margin-top: 24.7%;
+     color: hsl(184, 100%, 22%);
+     position: absolute;
+    }
+    .suvB:hover {
+	   background-color:rgb(219, 219, 219);
+    }
+
+	   
+    
+    .luxB {
+	   background-color:white;
+	   border-radius:28px;
+	   display:inline-block;
+   	 cursor:pointer;
+   	 font-family: 'Lexend Deca', sans-serif;;
+   	 font-size:17px;
+   	 padding:16px 42px;
+   	 text-decoration:none;
+     margin-left: 12%;
+     margin-top: 129%;
+     color: hsl(184, 100%, 22%);
+     
+    }
+    .luxB:hover {
+	   background-color:rgb(219, 219, 219);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/images/icon-sedans.svg" style="margin: 2.5%; margin-left: 2.8%;">
+    <div class="sedan">
+      <h1>SEDANS</h1>
+      <div class="sedanp">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or an your next road
+      trip.</div>
+      <a href="#" class="sedanB">Learn More</a>
+      
+    </div>
+    <div class="suvs">
+      <img src="/images/icon-suvs.svg" style="margin: 2.5%; margin-left: 2.8%;">
+      <h1>SUVS</h1>
+      <div class="suvp">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road
+      adventures.</div>
+      <a href="#" class="suvB">Learn More</a>
+   <div class="luxury">
+      <img src="./images/icon-luxury.svg" style="margin-top: 13%; margin-left: 13%;">
+      <div class="luxuryh1">LUXURY</div>
+      <div class="luxuryp">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</div>
+      <a href="#" class="luxB">Learn More</a>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pedro Lucas</a>.
+  </div>
+</body>
+</html>
